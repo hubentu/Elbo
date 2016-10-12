@@ -26,3 +26,4 @@ input_tidy <- function(pdata_file, exprs_file) {
 # probeset_mean <- tidy %>% group_by(probeset) %>% summarize(mean=mean(exprs))
 # probeset_mean %>% .[["mean"]] %>% density() %>% plot()
 # tidy %>% group_by(sex) %>% summarize(n())
+# ggplot(probeset_mean, aes(x=mean)) + geom_density()
