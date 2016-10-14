@@ -16,6 +16,8 @@
 #'    #se[,se$mol.biol %in% c("BCR/ABL", "NEG")]
 #'    #assays(se)[[1]] %>% rowMeans() %>% density() %>% plot()
 input_rich <- function(pdata_file, exprs_file) {
+  stopifnot(is_scalar_character(pdata_file))
+  stopifnot(is_scalar_character(exprs_file))
   pdata <- read.csv(pdata_file, row.names=1, check.names = FALSE)
   exprs <- read.csv(exprs_file, row.names=1, check.names = FALSE)
   
