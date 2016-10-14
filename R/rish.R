@@ -12,9 +12,9 @@
 #' @importFrom SummarizedExperiment SummarizedExperiment
 #' @export
 #' @examples 
-#'    se <- input_rich(pdata_file, exprs_file)
-#'    se[,se$mol.biol %in% c("BCR/ABL", "NEG")]
-#'    assays(se)[[1]] %>% rowMeans() %>% density() %>% plot()
+#'    #se <- input_rich(pdata_file, exprs_file)
+#'    #se[,se$mol.biol %in% c("BCR/ABL", "NEG")]
+#'    #assays(se)[[1]] %>% rowMeans() %>% density() %>% plot()
 input_rich <- function(pdata_file, exprs_file) {
   pdata <- read.csv(pdata_file, row.names=1, check.names = FALSE)
   exprs <- read.csv(exprs_file, row.names=1, check.names = FALSE)

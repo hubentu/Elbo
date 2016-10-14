@@ -19,8 +19,8 @@ A SummarizedExperiment() containing samples as colData(), and expression values
 Caputre the semantic meaing. For instance, separately recognizing the 'phenotypic' data
 }
 \examples{
-   se <- input_rich(pdata_file, exprs_file)
-   se[,se$mol.biol \%in\% c("BCR/ABL", "NEG")]
-   assays(se)[[1]] \%>\% rowMeans() \%>\% density() \%>\% plot()
+   #se <- input_rich(pdata_file, exprs_file)
+   #se[,se$mol.biol \%in\% c("BCR/ABL", "NEG")]
+   #assays(se)[[1]] \%>\% rowMeans() \%>\% density() \%>\% plot()
 }
 
